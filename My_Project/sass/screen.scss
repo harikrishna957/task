@@ -1,0 +1,65 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+.navbar {
+    background-color: green;
+    width: 800px;
+    height: 40px;
+    margin: auto;
+    color: white;
+    @include display-flex();
+    @include justify-content(space-between);
+    @include align-items(center);
+}
+.content {
+    width: 800px;
+    margin: auto;
+    @include display-flex();
+    @include justify-content(space-between);
+    .left, .right {
+        width: 200px;
+        background-color: red;
+    }
+    .center {
+        @include flex-grow(1);
+        background-color: black;
+        margin: 0px 10px 0px 10px;
+        .item1 {
+            margin: 10px 10px;
+            border: solid 2px red;
+            .top {
+                margin: 10px;
+                height: 50px;
+                @include display-flex();
+                @include justify-content(space between);
+                .grid1 {
+                    height: 50px;
+                    width: 50px;
+                    background-color: red;
+                }
+                .grid2 {
+                    height: 50px;
+                    margin-left: 10px;
+                    @include flex-grow(1);
+                    background-color: green;
+                }
+            }
+            .middle {
+                height: 200px;
+                background-color: blue;
+                margin: 0px 10px 0px 10px;
+            }
+            .bottom {
+                @include display-flex();
+                @include justify-content(space-between);
+                margin: 10px;
+                .like, .comment, .share {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

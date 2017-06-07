@@ -1,0 +1,86 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 7, ../sass/screen.scss */
+.navbar {
+  background-color: green;
+  width: 800px;
+  height: 40px;
+  margin: auto;
+  color: white;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* line 17, ../sass/screen.scss */
+.content {
+  width: 800px;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 22, ../sass/screen.scss */
+.content .left, .content .right {
+  width: 200px;
+  background-color: red;
+}
+/* line 26, ../sass/screen.scss */
+.content .center {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  background-color: black;
+  margin: 0px 10px 0px 10px;
+}
+/* line 30, ../sass/screen.scss */
+.content .center .item1 {
+  margin: 10px 10px;
+  border: solid 2px red;
+}
+/* line 33, ../sass/screen.scss */
+.content .center .item1 .top {
+  margin: 10px;
+  height: 50px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space between;
+  justify-content: space between;
+}
+/* line 38, ../sass/screen.scss */
+.content .center .item1 .top .grid1 {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+/* line 43, ../sass/screen.scss */
+.content .center .item1 .top .grid2 {
+  height: 50px;
+  margin-left: 10px;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  background-color: green;
+}
+/* line 50, ../sass/screen.scss */
+.content .center .item1 .middle {
+  height: 200px;
+  background-color: blue;
+  margin: 0px 10px 0px 10px;
+}
+/* line 55, ../sass/screen.scss */
+.content .center .item1 .bottom {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 10px;
+}
+/* line 59, ../sass/screen.scss */
+.content .center .item1 .bottom .like, .content .center .item1 .bottom .comment, .content .center .item1 .bottom .share {
+  background-color: white;
+}
