@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+            let v=1;
+            $("#minus").click(function(){
+                $("#counter").html(v-1);
+                v-=1;
+            })
+            $("#plus").click(function(){
+                $("#counter").html(v+1);
+                v+=1;
+            })
+		})
+	</script>
+	<title>Document</title>
+</head>
+<body>
+	<div id="content">
+		<span id="minus">-</span>
+		<span id="counter">1</span>
+		<span id="plus">+</span>
+	</div>
+</body>
+</html>
